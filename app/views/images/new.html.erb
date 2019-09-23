@@ -1,0 +1,13 @@
+<h1> New Image Form! </h1>
+<%= form_with model: Image.new do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <br>
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+    <br>
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+    <br>
+    <%= form.submit %>
+<% end %>

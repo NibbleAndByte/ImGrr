@@ -1,24 +1,28 @@
-# README
+This is an incremental project! 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Starting with Rails and Vue, I'll be adding VueX, Redis, and whatever else strikes my fancy.
 
-* Ruby version
+GOAL:
+A site where users can go to upload images of upset animals!
+    
+A user will be able to add images, at first via URL, then via upload.
+    -Users can comment on these images.
+    -Users can like and favorite images.
+    
+Users will be able to create accounts and log in.
+    -Creating an account will automatically log in as that user. 
+    -Users can also log out.
 
-* System dependencies
+Users will have a profile.
+    -Favorited images appear on their profile. 
+    -Analytics can appear here too
 
-* Configuration
 
-* Database creation
+Tables needed-
+    Users 
+    Images
+    Likes
+    Favorites
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

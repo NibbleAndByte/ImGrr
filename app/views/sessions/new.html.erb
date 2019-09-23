@@ -1,0 +1,21 @@
+<% if @user == nil %>
+    <h1> Make a new session - Log in! </h1>
+    <%= form_with url: sessions_path do |form| %>
+        <%= form.label :username %>
+        <%= form.text_field :username %>
+        <br>
+        <%= form.label :password %>
+        <%= form.password_field :password %>
+        <br>
+        <%= form.label :password_confirmation %>
+        <%= form.password_field :password_confirmation %>
+        <br>
+        <%= form.submit %>
+    <%end%>
+<% end %>
+
+
+<% if @user != nil %>
+    <h1> You're logged in! </h1>
+    Link to stuff here
+<% end %>
