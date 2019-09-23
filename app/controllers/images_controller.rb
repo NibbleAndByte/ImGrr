@@ -5,7 +5,9 @@ class ImagesController < ApplicationController
     end
     
     def create
-        image = Image.create(image_params)
+        image = Image.new(image_params)
+        image.user_id = session[:user_id]
+        image.save
         redirect_to image
     end
 
